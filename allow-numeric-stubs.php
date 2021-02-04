@@ -85,8 +85,8 @@ class Allow_Numeric_Stubs {
 	public function wp_unique_post_slug_allow_numeric_page_slugs( $slug, $post_ID, $post_status, $post_type, $post_parent, $original_slug ) {
 		global $wpdb;
 
-		// We're only interested in pages with attempted numeric slugs that got changed
-		if ( 'page' != $post_type || ! is_numeric( $original_slug ) || $slug === $original_slug ) {
+		// We're only interested in pages or posts from any post type with attempted numeric slugs that got changed
+		if ( ! is_numeric( $original_slug ) || $slug === $original_slug ) {
 			return $slug;
 		}
 
