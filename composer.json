@@ -1,0 +1,16 @@
+{
+    "name": "visata/allow-numeric-stubs",
+    "homepage": "https://github.com/visata/allow-numeric-stubs",
+    "description": "Allow numeric stub",
+    "keywords": ["wordpress", "plugin"],
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Alex",
+            "email": "alex@viper007bond.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    }
+}
